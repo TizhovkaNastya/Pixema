@@ -1,0 +1,18 @@
+.form_signin{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 3px solid #7B61FF;
+    border-radius: 1em;
+    max-width: 30em;
+    max-height: 500px;
+    margin: 0px auto;
+    padding: 3em;
+}
+.label>h3{
+    padding-bottom: 10px;
+    color: #DADADA;
+}
+.input{
+    margin-bottom: 10px;
+}

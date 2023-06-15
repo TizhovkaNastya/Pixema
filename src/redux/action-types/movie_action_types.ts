@@ -1,0 +1,8 @@
+export const LOAD_MOVIE = "LOAD_MOVIE";
+export const SET_MOVIE = "SET_MOVIE";
+export const SET_SELECTED_MOVIE = "SET_SELECTED_MOVIE";
+export const LOAD_SELECTED_MOVIE = "LOAD_SELECTED_MOVIE";
+export const SET_CURRENT_PAGE = "SET_CURRENT_PAGE";
+export const SET_TOTAL = 'SET_TOTAL';
+export const SET_SELECTED_POPULAR = "SET_SELECTED_POPULAR";
+export const SET_LOADING = "SET_LOADING";

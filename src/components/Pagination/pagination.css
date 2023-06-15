@@ -1,0 +1,42 @@
+.favorite{
+    width: 50px;
+    height: 55px;
+    fill: white;
+    cursor: pointer;
+    position: relative;
+    top: 5em;
+    left: 18em;
+}
+.favorite-active{
+    width: 50px;
+    height: 55px;
+    fill: #7B61FF;
+    cursor: pointer;
+    position: relative;
+    top: 5em;
+    left: 18em;
+}
+.main-pagin{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    bottom: 20px; 
+    left: 20px;
+    justify-content: space-between;
+    margin: 1em auto;
+}
+.main-current-page{
+    color: #7B61FF;
+    font-size: 20px;
+    margin-top: 1em ;
+    padding: 0 1em;
+} 
+.main-current-page>h2{
+    border: 4px solid #7B61FF;
+    border-radius: 100%;
+    padding: 1em 1.3em;
+}
+.pagin{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,54 @@
+.sign_container{
+    max-width: 80em;
+    max-height: 80em;
+    margin: 0 auto;
+    padding: 2em;
+}
+.form{
+    background-color: transparent;
+    border: 3px solid #7B61FF;
+    border-radius: 1em;
+    max-width: 35em;
+    max-height: 50em;
+    margin: 0px auto;
+    padding: 3em;
+}
+.input{
+    width:90%;
+    border-color: #7B61FF;
+    border-radius: 1em;
+    padding: 30px 0 30px 30px;  
+    outline: none;
+    background-color: transparent;
+    caret-color: #7B61FF;
+    color:white;
+}
+.btn-sign{
+  margin: 2em auto; 
+  width: 200px; 
+}
+.bttn{  
+  background-color: #7B61FF; 
+  color: white;
+  font-size: 14px;
+  padding: 2em 5em;
+  border: none;
+  cursor: pointer;
+  border-radius: 1em;
+  margin: 0 auto;
+}
+.have-acc{
+    display: flex;
+    flex-direction: row;
+    margin: 1em auto;
+    width: 250px;
+}
+.have-acc>h5{
+    color: #a9afd7;
+    font-size: 16px;
+}
+.have-acc>a{
+    color: #7B61FF;
+    padding-left: 1em;
+    text-decoration: none;   
+}

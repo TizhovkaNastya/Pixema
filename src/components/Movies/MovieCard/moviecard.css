@@ -1,0 +1,54 @@
+.movie-card{
+    width: 80%;
+    margin: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    max-width: 350px;
+    border-radius: 1em;
+}
+.cards-main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-container{
+    box-shadow: 0 0 10px 5px rgba(147, 120, 226, 0.349);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    justify-content: center;
+    padding: 15px;
+}
+.movie-info{
+    display: flex;
+    color: white;
+    text-shadow:3px 3px 3px rgb(90, 90, 219);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+.movie-card__image{
+ width: 100%;
+ border-radius: 1em;
+}
+.main-pagination{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    justify-content: space-between;
+}
+.main-current-page{
+    color: rgb(167, 91, 238);
+    font-size: 20px;
+    margin: 0 ;
+}
+ .button-card{
+  position: absolute;
+  right: 50px;
+  bottom: 25px;
+}

@@ -1,0 +1,14 @@
+.favorite-container{
+    padding-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1150px;
+    margin: 0 auto;
+}
+.not-favorite{
+    padding-top: 5em;
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 3px #7B61FF;
+    margin: 0 auto;
+}
