@@ -21,6 +21,7 @@ type actionsType =
 	| ReturnType<typeof setTotal>
 	| ReturnType<typeof setLoading>
 	| ReturnType<typeof setSelectedPopular>;
+	
 const moviesReducer = (state = initialState, action: actionsType) => {
 	switch (action.type) {	
 		case SET_SELECTED_POPULAR: {

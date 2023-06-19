@@ -12,7 +12,6 @@ export const SelectedMovie = () => {
 		(state: IStoreState) => state.movies.selectedPost
 	);
 	const navigate = useNavigate();
- 
 	const dispatch = useDispatch();
 	useEffect(() => {
 		dispatch(loadSelectedPost(movieId!));

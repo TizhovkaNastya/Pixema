@@ -58,29 +58,8 @@ const setLoading= (isLoading: boolean) =>
 	({
 		type: SET_LOADING,
 		isLoading,
-	} as const);
-
-
-// function* fetchSimilarMovies(action: any) {
-// 	const options = {
-// 		method: "GET",
-// 		headers: {
-// 			accept: "application/json",
-// 			Authorization:
-// 				"Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZTkzNzkzNzBhNzI5MGUxY2RmODU2M2FiNDM5MmNhZSIsInN1YiI6IjY0NzhkNGZmMDc2Y2U4MDE0OWVlMGY3MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ozBkGArwc15buujGc4hQO1O_qt2z_H9A6tKQXrAhKFM",
-// 		},
-// 	};
-// 	const { movieId } = action;
-
-// 	const resp: Response = yield fetch(
-// 		`https://api.themoviedb.org/3/movie/${movieId}/similar?language=en-US&page=1`,
-// 		options
-// 	);
-
-// 	const data: IMovieResponce = yield resp.json();
-// 	yield put(setSimilarMovie(data.results));
-// }
-
+} as const);
+	
 function* fetchMovies(action: any) {
 	const options = {
 		method: "GET",

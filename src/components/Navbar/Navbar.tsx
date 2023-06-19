@@ -2,14 +2,13 @@ import './navbar.css';
 import { useState } from "react";
 import { Button } from '../Button/Button';
 import { NavLink } from 'react-router-dom';
-
+import {  useSelector } from 'react-redux';import { IStoreState } from '../../types';
 
 export const Navbar = () => {
 
     const [burger_class, setBurgerClass] = useState('burger-bar unclicked')
     const [menu_class, setMenuClass] = useState('menu hidden')
     const [isMenuClicked, setIsMenuClicked] = useState(true)
-
     const updateMenu = () => {
         if (!isMenuClicked) {
             setBurgerClass('burger-bar clicked')
@@ -21,7 +20,7 @@ export const Navbar = () => {
         }
         setIsMenuClicked(!isMenuClicked)
     }
-
+	const authorizedUserName = useSelector((state: IStoreState) => state.user.authorizedUser.username);
 
     return (
         <div style={{ maxWidth: '100px', height: '100hv' }}>
@@ -33,18 +32,18 @@ export const Navbar = () => {
                 </div>
             </nav>
             <div className={menu_class}>
-                <NavLink to={"/"}>
+                {authorizedUserName !== '' ? <NavLink to={"/"}>
                     <Button className={'button'} content={'Home'}
                         callback={() => { }} />
-                </NavLink>
-                <NavLink to={"favorites"}>
+                </NavLink> : <></>}
+                {authorizedUserName !== '' ?  <NavLink to={"favorites"}>
                     <Button className={'button'} content={'Favorites'}
                         callback={() => { }} />
-                </NavLink>
-                <NavLink to={"/log-out"}>
+                </NavLink> : <></>}
+                {authorizedUserName !== '' ?  <NavLink to={"/log-out"}>
                     <Button className={'button'} content={'Log Out'}
                         callback={() => { }} />
-                </NavLink>
+                    </NavLink> : <></>}
             </div>
         </div>
     )

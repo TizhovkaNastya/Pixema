@@ -6,22 +6,19 @@ import { loadMovie, setCurrentPage } from "../../redux/action-creators/movie_act
 import { Button } from "../Button/Button";
 import './pagination.css';
 
- 
-export const Pagination = () => {
-     
-     const limit = useSelector((state: IStoreState) => state.movies.limit)
-     const total = useSelector((state: IStoreState) => state.movies.total)
-     const data = useSelector((state: IStoreState) => state.movies.movies)
-     const currentPage = useSelector((state: IStoreState) => state.movies.currentPage)
-     const popular = useSelector((state: IStoreState) => state.movies.selectedPopular)
-     const loading = useSelector((state: IStoreState) => state.movies.isLoading)
+export const Pagination = () => { 
+     const limit = useSelector((state: IStoreState) => state.movies.limit);
+     const total = useSelector((state: IStoreState) => state.movies.total);
+     const currentPage = useSelector((state: IStoreState) => state.movies.currentPage);
+     const popular = useSelector((state: IStoreState) => state.movies.selectedPopular);
      const pagesCount = Math.ceil(total / limit);
+     const loading = useSelector((state: IStoreState) => state.movies.isLoading);
+     const data = useSelector((state: IStoreState) => state.movies.movies);
    
      const dispatch = useDispatch();
      useEffect(() => {
      dispatch(loadMovie({ limit, currentPage, total, popular }))
      }, [limit, currentPage, total, popular]);
-
 
      return (
      <div className="pagin">

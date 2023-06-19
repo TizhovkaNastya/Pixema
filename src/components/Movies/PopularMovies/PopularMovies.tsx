@@ -9,7 +9,6 @@ export const SelectPopular: FC<IMoviePopularData> = ({ data }) => {
     const dispatch = useDispatch()
  
     const onChange = (e: any) => {
-        console.log(e.target.value)
         setSelects(e.target.value)
         dispatch(setSelectedPopular(e.target.value))
         dispatch(setCurrentPage(1))

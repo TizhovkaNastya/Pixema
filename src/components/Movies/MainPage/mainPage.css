@@ -2,10 +2,8 @@
     max-width: 1240px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
-
 .main-container-select{
     display: flex;
     justify-content: space-between;

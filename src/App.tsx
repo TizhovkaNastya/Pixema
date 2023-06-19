@@ -10,14 +10,13 @@ import { SignIn } from "./components/Signs/SignIn/SignIn";
 import { SignUpActivation } from "./components/Signs/SignUpActivation/SignUpActivation";
 
 function App() {
-
 	const authorizedUser = useSelector((state: IStoreState) => state.user.authorizedUser);
+	
 	return (
 		<div className="App">
 			<BrowserRouter>
 				<Header/>
 				<Routes>
- 
 					<Route path="/" element={<MainPage /> } />
 					<Route path="/movie">
 						<Route path=":movieId" element={<SelectedMovie />} />

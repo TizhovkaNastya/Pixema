@@ -16,7 +16,6 @@ const getInitialState = () => {
 		const parse = JSON.parse(localState)
 		const { user } = parse
 		return user
-		
 	}
 	return initialState
 };
